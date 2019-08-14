@@ -11,7 +11,7 @@ clear:
 	docker image prune
 
 kubectlrun:
-	kubectl run mnuma/alpinetool --rm -it --image=mnuma/alpinetool /bin/sh
+	kubectl run alpinetool --rm -it --image=mnuma/alpinetool /bin/sh
 
 dockerrun:
-	docker run --rm -ti mnuma/alpinetool sh
+	docker run --rm -ti mnuma/alpinetool /bin/sh
